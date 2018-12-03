@@ -37,15 +37,15 @@ Timing.prototype.getSort = function(arr) {
 
 Timing.prototype.performanceTimer = function(callback, cb_name, n) {
   test = []
-  console.log(callback)
+  // console.log(callback)
   document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
   for (i = 100000; i <= 1000001; i += 50000) {
     array_to_test = this.createArray(i)
 
     //Run Performance steps
-    var a = performance.now()
+    var a = window.performance.now()
     callback(array_to_test)
-    var b = performance.now();
+    var b = window.performance.now();
     //end performance steps
 
     test.push({
@@ -65,7 +65,7 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
 
 Timing.prototype.runTimer = function(toTest, loop, functionname) {
   results = []
-  console.log(toTest)
+  // console.log(toTest)
 
   for (x = 1; x <= loop; x++) {
     results.push(this.performanceTimer(toTest, functionname, x))

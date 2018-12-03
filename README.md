@@ -31,3 +31,13 @@ opposite of efficiency - want to try to decrease complexity
 - timing code
 - readme with plotted graphs - linking to algorithms
 - folder of algorithms written
+
+## Timing graphs (using performance.now in javascript)
+### last
+<!-- ![last](images/sort-data.png) -->
+### reverse
+![reverse](images/reverse-data.png)
+### shuffle
+![shuffle](images/shuffle-data.png)
+### sort
+![sort](images/sort-data.png)
