@@ -26,11 +26,11 @@ sequence of operations/steps that produce the desired outcome
 
 opposite of efficiency - want to try to decrease complexity
 
-## Github project
+<!-- ## Github project -->
 
-- timing code
+<!-- - timing code
 - readme with plotted graphs - linking to algorithms
-- folder of algorithms written
+- folder of algorithms written -->
 
 ## Timing graphs (using performance.now in javascript)
 ### last (too many 0s making the graph weird)
