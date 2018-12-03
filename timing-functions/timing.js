@@ -5,7 +5,6 @@ function createArray(n) {
     arr.push(Math.floor(Math.random() * 101))
   }
   return arr
-
 }
 
 function getShuffle(arr) {
@@ -32,16 +31,20 @@ function getSort(arr) {
 }
 
 forAveraging = {}
+
 function performanceTimer(callback,cb_name,n) {
   test = []
 
   document.write("<br><br>" +cb_name +'- run '+n+'<br>')
   for (i = 100000; i <= 1000001; i+=50000) {
-  array_to_test = createArray(i)
+    array_to_test = createArray(i)
+    //Run Performance steps
     var a = performance.now()
     callback(array_to_test)
     var b = performance.now();
+    //end performance steps
     test.push({[i]:(b-a)})
+
     if (forAveraging[i] === undefined){
       forAveraging[i] =  (b-a)
     } else {
@@ -50,7 +53,7 @@ function performanceTimer(callback,cb_name,n) {
     document.write("<br>")
     document.write(i + '\t' + (b - a));
   }
-  return test
+  // return test
 }
 
 results = []
@@ -61,6 +64,15 @@ for (x = 1; x <= loop; x++) {
     // results.push(performanceTimer(getShuffle,'getShuffle',x))
     // results.push(performanceTimer(getSort,'getSort',x))
 
+}
+
+// runTimer(getLast, 2,'getLast')
+function runTimer(toTest, loop, functionname) {
+  results = []
+
+  for (x = 1; x <= loop; x++) {
+      results.push(performanceTimer(toTest,functionname,x))
+  }
 }
 
 function objectMap(object, mapFn) {
