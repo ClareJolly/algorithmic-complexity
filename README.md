@@ -33,8 +33,8 @@ opposite of efficiency - want to try to decrease complexity
 - folder of algorithms written
 
 ## Timing graphs (using performance.now in javascript)
-### last
-<!-- ![last](images/sort-data.png) -->
+### last (too many 0s making the graph weird)
+![last](images/last-data.png)
 ### reverse
 ![reverse](images/reverse-data.png)
 ### shuffle
