@@ -44,8 +44,12 @@ opposite of efficiency - want to try to decrease complexity
 
 ## Timing graphs for my finding duplicates algorithm
 
-20 times - average
+### 20 times - average
 ![duplicates](images/find-dupes.png)
 
-20 times - median
+In order to smooth this out I was advised to use median instead of average.  So.....
+
+### 20 times - median
 ![duplicates-median](images/find-dupes-median.png)
+
+Still getting an odd spike around 45,000 - but it is much smoother
