@@ -37,7 +37,7 @@ opposite of efficiency - want to try to decrease complexity
 ![last](images/last-data.png)
 ### reverse
 ![reverse](images/reverse-data.png)
-### shuffle
+### shuffle (not an inbuilt function so found one to use)
 ![shuffle](images/shuffle-data.png)
 ### sort
 ![sort](images/sort-data.png)
