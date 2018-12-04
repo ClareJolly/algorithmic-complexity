@@ -12,6 +12,17 @@ Timing.prototype.createArray = function(n) {
   return arr
 };
 
+Timing.prototype.create1and0Array = function(n) {
+  arr = []
+  var i;
+  for (i = 0; i <= n; i++) {
+    arr.push(Math.round(Math.random()))
+  }
+  console.log(arr)
+  return arr
+};
+
+
 Timing.prototype.createIncrementingArray = function(n) {
   arr = []
   var i;
@@ -25,28 +36,28 @@ Timing.prototype.createIncrementingArray = function(n) {
 };
 
 
-Timing.prototype.getShuffle = function(arr) {
-  var j, x, i;
-  for (i = arr.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    x = arr[i];
-    arr[i] = arr[j];
-    arr[j] = x;
-  }
-  return arr;
-}
-
-Timing.prototype.getLast = function(arr) {
-  return arr.slice(-1)[0]
-}
-
-Timing.prototype.getReverse = function(arr) {
-  return arr.reverse()
-}
-
-Timing.prototype.getSort = function(arr) {
-  return arr.sort()
-}
+// Timing.prototype.getShuffle = function(arr) {
+//   var j, x, i;
+//   for (i = arr.length - 1; i > 0; i--) {
+//     j = Math.floor(Math.random() * (i + 1));
+//     x = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = x;
+//   }
+//   return arr;
+// }
+//
+// Timing.prototype.getLast = function(arr) {
+//   return arr.slice(-1)[0]
+// }
+//
+// Timing.prototype.getReverse = function(arr) {
+//   return arr.reverse()
+// }
+//
+// Timing.prototype.getSort = function(arr) {
+//   return arr.sort()
+// }
 
 Timing.prototype.findMedian = function(arr) {
 
@@ -57,16 +68,16 @@ let median = (arr[lowMiddle] + arr[highMiddle]) / 2;
 return median
 }
 
-Timing.prototype.performanceTimer = function(callback, cb_name, n) {
+Timing.prototype.performanceTimer = function(callback, cb_name, n,arraytype) {
   test = []
-  // console.log(callback)
+  console.log(arraytype)
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
   // for (i = 100000; i <= 1000001; i += 50000) {
   for (i = 10000; i <= 100001; i += 5000) {
     // for (i = 1; i <= 30; i ++) {
     // array_to_test = this.createArray(i)
-    array_to_test = this.createIncrementingArray(i)
+    array_to_test = arraytype(i)
 
     // console.log(array_to_test)
     //Run Performance steps
@@ -100,12 +111,12 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
   return test
 }
 
-Timing.prototype.runTimer = function(toTest, loop, functionname) {
+Timing.prototype.runTimer = function(toTest, loop, functionname,arraytype) {
   results = []
   // console.log(toTest)
 
   for (x = 1; x <= loop; x++) {
-    results.push(this.performanceTimer(toTest, functionname, x))
+    results.push(this.performanceTimer(toTest, functionname, x,arraytype))
   }
 
   var newObject = this.objectMap(this.forAveraging, function(value) {

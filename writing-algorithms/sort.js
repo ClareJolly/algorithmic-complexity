@@ -1,0 +1,31 @@
+// sort an array of 1s and 0s
+// Given an array containing only 0s and 1s, sort it.
+
+// Tests
+// when list is [0,1,0,1] expect [0,0,1,0]
+
+// Plain English
+// =============
+// get the list
+// look at the first item in the list
+// if it's 0 put at the start of the list
+// if it's 1 put it at the end of the list
+// repeat until the end
+
+// Function signature
+// sort(arr)
+
+function sort (arr) {
+  newArr = []
+  for (var i = 0; i < arr.length; ++i){
+    if (arr[i] === 0){
+      newArr.unshift(arr[i])
+  } else {
+    newArr.push(arr[i])
+  }
+}
+  return newArr
+}
+
+
+console.log(sort([0,1,0,1]))

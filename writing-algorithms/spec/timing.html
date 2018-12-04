@@ -26,16 +26,19 @@ body {
 <button name="sort" id="sort">sort</button> -->
 <button name="dupes" id="dupes">find duplicates</button>
 <button name="reverse" id="reverse">reverse</button>
-<button name="reverse2" id="reverse2">reverse 2</button>
+<button name="sort" id="sort">sort - 1s & 0s</button>
+<!-- <button name="reverse2" id="reverse2">reverse - SLOW</button> -->
 
 <div id="main">
 
 </div>
 <script src="../finding_duplicates.js"></script>
 <script src="../reverse.js"></script>
+<script src="../sort.js"></script>
 <script src="timing.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() {
     timer = new Timing
+    console.log(timer.create1and0Array(10))
     // console.log(timer.findMedian([2, 56, 3, 41, 0, 4, 100, 23]))
     // timer.runTimer(timer.getShuffle, 2,'getShuffle');
 }, false);
@@ -54,14 +57,17 @@ body {
 //   timer.runTimer(timer.getSort, 10,'getSort');
 // })
 document.getElementById("dupes").addEventListener("click", function() {
-  timer.runTimer(findDuplicates, 20,'findDuplicates');
+  timer.runTimer(findDuplicates, 20,'findDuplicates',timer.createIncrementingArray);
 })
 document.getElementById("reverse").addEventListener("click", function() {
-  timer.runTimer(reverse, 20,'reverse');
+  timer.runTimer(reverse, 20,'reverse',timer.createArray);
 })
-document.getElementById("reverse2").addEventListener("click", function() {
-  timer.runTimer(reverse2, 20,'reverse2');
+document.getElementById("sort").addEventListener("click", function() {
+  timer.runTimer(sort, 20,'sort',timer.create1and0Array);
 })
+// document.getElementById("reverse2").addEventListener("click", function() {
+//   timer.runTimer(reverse2, 20,'reverse2');
+// })
 </script>
   </body>
 </html>

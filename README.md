@@ -44,6 +44,8 @@ opposite of efficiency - want to try to decrease complexity
 
 ## Timing graphs for my finding duplicates algorithm
 
+Given a list of words, find all words that appear more than once.
+
 ### 20 times - average
 ![duplicates](images/find-dupes.png)
 
@@ -64,3 +66,8 @@ Still getting an odd spike around 45,000 - but it is much smoother
 ![reverse](images/reverse.png)
 
 using a reverse iterating through the array - so i=final index down to i=0
+
+### Timing graphs for my sorting 1s and 0s algorithm
+
+** Sorting 0s and 1s **
+Given an array containing only 0s and 1s, sort it.

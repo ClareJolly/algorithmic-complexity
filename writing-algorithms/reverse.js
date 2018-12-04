@@ -33,4 +33,4 @@ function reverse2 (arr) {
   return newArr
 }
 
-reverse2(['a','b'])
+// reverse2(['a','b'])
