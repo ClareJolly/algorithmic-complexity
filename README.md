@@ -57,3 +57,10 @@ Still getting an odd spike around 45,000 - but it is much smoother
 ### 20 times - median - array length from 10,000 to 100,000
 
 ![duplicates-median-smaller](images/find-dupes-median-smaller.png)
+
+## Timing graphs for my reverse algorithm
+
+### 20 times - median
+![reverse](images/reverse.png)
+
+using a reverse iterating through the array - so i=final index down to i=0

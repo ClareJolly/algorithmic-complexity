@@ -25,7 +25,7 @@ function findDuplicates(list) {
   newList = {}
   // console.log(newList)
   //go through the list
-  console.log(list.length)
+  // console.log(list.length)
   for (var i = 0; i < list.length; i++) {
     // look at item
     // if it matches a previous return true

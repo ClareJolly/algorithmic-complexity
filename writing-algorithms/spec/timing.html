@@ -25,10 +25,14 @@ body {
 <button name="shuffle" id="shuffle">shuffle</button>
 <button name="sort" id="sort">sort</button> -->
 <button name="dupes" id="dupes">find duplicates</button>
+<button name="reverse" id="reverse">reverse</button>
+<button name="reverse2" id="reverse2">reverse 2</button>
+
 <div id="main">
 
 </div>
 <script src="../finding_duplicates.js"></script>
+<script src="../reverse.js"></script>
 <script src="timing.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() {
     timer = new Timing
@@ -51,6 +55,12 @@ body {
 // })
 document.getElementById("dupes").addEventListener("click", function() {
   timer.runTimer(findDuplicates, 20,'findDuplicates');
+})
+document.getElementById("reverse").addEventListener("click", function() {
+  timer.runTimer(reverse, 20,'reverse');
+})
+document.getElementById("reverse2").addEventListener("click", function() {
+  timer.runTimer(reverse2, 20,'reverse2');
 })
 </script>
   </body>

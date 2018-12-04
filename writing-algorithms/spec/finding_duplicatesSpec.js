@@ -1,7 +1,7 @@
 'use strict';
 
-describe('Thermostat', function() {
-  var thermostat;
+describe('Find Duplicates', function() {
+  // var thermostat;
 
   // beforeEach(function() {
   //   thermostat = new Thermostat();

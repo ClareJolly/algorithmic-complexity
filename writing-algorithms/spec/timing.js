@@ -59,7 +59,7 @@ return median
 
 Timing.prototype.performanceTimer = function(callback, cb_name, n) {
   test = []
-  console.log(callback)
+  // console.log(callback)
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
   // for (i = 100000; i <= 1000001; i += 50000) {
@@ -68,7 +68,7 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
     // array_to_test = this.createArray(i)
     array_to_test = this.createIncrementingArray(i)
 
-    console.log(array_to_test)
+    // console.log(array_to_test)
     //Run Performance steps
     var a = window.performance.now()
     callback(array_to_test)
@@ -90,8 +90,8 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
     } else {
       this.forMedian[i].push(b-a)
     }
-    console.log("foraveraging:",this.forAveraging)
-    console.log("formedian:",this.forMedian)
+    // console.log("foraveraging:",this.forAveraging)
+    // console.log("formedian:",this.forMedian)
     // document.write("<br>")
     // document.write(i + '\t' + (b - a));
     document.getElementById('main').insertAdjacentHTML('beforeend', "<br>");
@@ -112,7 +112,7 @@ Timing.prototype.runTimer = function(toTest, loop, functionname) {
     return value / loop
   })
 
-console.log("Average: ", newObject);
+// console.log("Average: ", newObject);
   // findMedian
 
   var newObjectMedian = this.objectMap(this.forMedian, function(value) {
@@ -123,7 +123,7 @@ console.log("Average: ", newObject);
     let median = (value[lowMiddle] + value[highMiddle]) / 2;
     return median
   })
-  console.log("Median: ", newObjectMedian);
+  // console.log("Median: ", newObjectMedian);
 
   const entries = Object.entries(newObjectMedian)
   document.getElementById('main').insertAdjacentHTML('beforeend',"<br><br>Averages</br>");
