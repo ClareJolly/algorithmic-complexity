@@ -69,7 +69,7 @@ using a reverse iterating through the array - so i=final index down to i=0
 
 ## Timing graphs for my sorting 1s and 0s algorithm
 
-** Sorting 0s and 1s **
+**Sorting 0s and 1s**
 
 Given an array containing only 0s and 1s, sort it.
 
@@ -83,4 +83,4 @@ This one is creating new array and putting the number at the start or end.  Tryi
 
 ![sort10same](images/sort-1_0_same.png)
 
-same curve but ** MUCH ** slower
+same curve but **MUCH** slower
