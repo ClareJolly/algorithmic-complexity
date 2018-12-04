@@ -84,3 +84,12 @@ This one is creating new array and putting the number at the start or end.  Tryi
 ![sort10same](images/sort-1_0_same.png)
 
 same curve but **MUCH** slower
+
+## Timing graphs for my return to 10 frequency algorithm
+
+**Most frequent words**
+Given a text, find which are the ten most common words.
+
+### 20 times - median
+
+![frequency](images/frequency-top10.png)

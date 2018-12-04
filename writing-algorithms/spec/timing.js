@@ -7,7 +7,7 @@ Timing.prototype.createArray = function(n) {
   arr = []
   var i;
   for (i = 0; i < n; i++) {
-    arr.push(Math.floor(Math.random() * 10))
+    arr.push(Math.floor(Math.random() * 100))
   }
   return arr
 };
@@ -70,16 +70,17 @@ return median
 
 Timing.prototype.performanceTimer = function(callback, cb_name, n,arraytype) {
   test = []
-  console.log(arraytype)
+  // console.log(callback)
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
   // for (i = 100000; i <= 1000001; i += 50000) {
   for (i = 10000; i <= 100001; i += 5000) {
+  // for (i = 200; i <= 800; i += 100) {
     // for (i = 1; i <= 30; i ++) {
     // array_to_test = this.createArray(i)
     array_to_test = arraytype(i)
 
-    // console.log(array_to_test)
+    // document.getElementById('main').insertAdjacentHTML('beforeend', array_to_test);
     //Run Performance steps
     var a = window.performance.now()
     callback(array_to_test)
