@@ -27,5 +27,20 @@ function sort (arr) {
   return newArr
 }
 
+function sort2 (arr) {
+  newArr = []
+  for (var i = 0; i < arr.length; ++i){
+    temp = arr[i]
+    arr.splice(i, 1);
+    if (temp === 0){
+      arr.unshift(0)
+  } else {
+    arr.push(1)
+  }
+}
+  return arr
+}
 
-console.log(sort([0,1,0,1]))
+
+
+console.log(sort2([0,1,0,1]))

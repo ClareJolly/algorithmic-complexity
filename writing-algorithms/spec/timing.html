@@ -26,7 +26,8 @@ body {
 <button name="sort" id="sort">sort</button> -->
 <button name="dupes" id="dupes">find duplicates</button>
 <button name="reverse" id="reverse">reverse</button>
-<button name="sort" id="sort">sort - 1s & 0s</button>
+<button name="sort" id="sort">sort - 1s & 0s - new array</button>
+<button name="sort2" id="sort2">sort - 1s & 0s - existing array</button>
 <!-- <button name="reverse2" id="reverse2">reverse - SLOW</button> -->
 
 <div id="main">
@@ -64,6 +65,10 @@ document.getElementById("reverse").addEventListener("click", function() {
 })
 document.getElementById("sort").addEventListener("click", function() {
   timer.runTimer(sort, 20,'sort',timer.create1and0Array);
+})
+
+document.getElementById("sort2").addEventListener("click", function() {
+  timer.runTimer(sort2, 20,'sort2',timer.create1and0Array);
 })
 // document.getElementById("reverse2").addEventListener("click", function() {
 //   timer.runTimer(reverse2, 20,'reverse2');

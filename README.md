@@ -67,7 +67,20 @@ Still getting an odd spike around 45,000 - but it is much smoother
 
 using a reverse iterating through the array - so i=final index down to i=0
 
-### Timing graphs for my sorting 1s and 0s algorithm
+## Timing graphs for my sorting 1s and 0s algorithm
 
 ** Sorting 0s and 1s **
+
 Given an array containing only 0s and 1s, sort it.
+
+### 20 times - median - new array
+
+![sort10](images/sort-1_0.png)
+
+This one is creating new array and putting the number at the start or end.  Trying with a slightly different method of updating the existing array
+
+### 20 times - median - same array
+
+![sort10same](images/sort-1_0_same.png)
+
+same curve but ** MUCH ** slower
