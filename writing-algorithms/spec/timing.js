@@ -1,5 +1,6 @@
 function Timing() {
   this.forAveraging = {}
+  this.forMedian = {}
 };
 
 Timing.prototype.createArray = function(n) {
@@ -47,6 +48,15 @@ Timing.prototype.getSort = function(arr) {
   return arr.sort()
 }
 
+Timing.prototype.findMedian = function(arr) {
+
+arr.sort((a, b) => a - b);
+let lowMiddle = Math.floor((arr.length - 1) / 2);
+let highMiddle = Math.ceil((arr.length - 1) / 2);
+let median = (arr[lowMiddle] + arr[highMiddle]) / 2;
+return median
+}
+
 Timing.prototype.performanceTimer = function(callback, cb_name, n) {
   test = []
   console.log(callback)
@@ -74,6 +84,14 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
     } else {
       this.forAveraging[i] = this.forAveraging[i] + (b - a)
     }
+
+    if (this.forMedian[i] === undefined) {
+      this.forMedian[i]= [b-a]
+    } else {
+      this.forMedian[i].push(b-a)
+    }
+    console.log("foraveraging:",this.forAveraging)
+    console.log("formedian:",this.forMedian)
     // document.write("<br>")
     // document.write(i + '\t' + (b - a));
     document.getElementById('main').insertAdjacentHTML('beforeend', "<br>");
@@ -94,9 +112,20 @@ Timing.prototype.runTimer = function(toTest, loop, functionname) {
     return value / loop
   })
 
-  // console.log("Averages: ", newObject);
+console.log("Average: ", newObject);
+  // findMedian
 
-  const entries = Object.entries(newObject)
+  var newObjectMedian = this.objectMap(this.forMedian, function(value) {
+    // return this.getSort([1,2])
+    value.sort((a, b) => a - b);
+    let lowMiddle = Math.floor((value.length - 1) / 2);
+    let highMiddle = Math.ceil((value.length - 1) / 2);
+    let median = (value[lowMiddle] + value[highMiddle]) / 2;
+    return median
+  })
+  console.log("Median: ", newObjectMedian);
+
+  const entries = Object.entries(newObjectMedian)
   document.getElementById('main').insertAdjacentHTML('beforeend',"<br><br>Averages</br>");
   // document.write("<br><br>Averages</br>")
   for (const [a, b] of entries) {

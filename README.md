@@ -41,3 +41,11 @@ opposite of efficiency - want to try to decrease complexity
 ![shuffle](images/shuffle-data.png)
 ### sort
 ![sort](images/sort-data.png)
+
+## Timing graphs for my finding duplicates algorithm
+
+20 times - average
+![duplicates](images/find-dupes.png)
+
+20 times - median
+![duplicates-median](images/find-dupes-median.png)
