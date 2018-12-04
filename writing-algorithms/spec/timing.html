@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timing Functions</title>
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+<style>
+body {
+  font-family: 'Bungee', cursive;
+  }
+
+  h1 {
+    font-family: 'Bungee', cursive;
+    }
+
+    button {
+    font-family: 'Bungee', cursive;
+      }
+    </style>
+  </head>
+  <body>
+<h1>Timing functions in JavaScript</h1>
+<!-- <button name="last" id="last">last</button>
+<button name="reverse" id="reverse">reverse</button>
+<button name="shuffle" id="shuffle">shuffle</button>
+<button name="sort" id="sort">sort</button> -->
+<button name="dupes" id="dupes">find duplicates</button>
+<div id="main">
+
+</div>
+<script src="../finding_duplicates.js"></script>
+<script src="timing.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    timer = new Timing
+    // console.log(timer.createIncrementingArray(10))
+    // timer.runTimer(timer.getShuffle, 2,'getShuffle');
+}, false);
+
+
+// document.getElementById("last").addEventListener("click", function() {
+//   timer.runTimer(timer.getLast, 10,'getLast');
+// })
+// document.getElementById("reverse").addEventListener("click", function() {
+//   timer.runTimer(timer.getReverse, 10,'getReverse');
+// })
+// document.getElementById("shuffle").addEventListener("click", function() {
+//   timer.runTimer(timer.getShuffle, 10,'getShuffle');
+// })
+// document.getElementById("sort").addEventListener("click", function() {
+//   timer.runTimer(timer.getSort, 10,'getSort');
+// })
+document.getElementById("dupes").addEventListener("click", function() {
+  timer.runTimer(findDuplicates, 20,'findDuplicates');
+})
+</script>
+  </body>
+</html>
