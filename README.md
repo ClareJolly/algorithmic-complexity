@@ -88,6 +88,7 @@ same curve but **MUCH** slower
 ## Timing graphs for my return to 10 frequency algorithm
 
 **Most frequent words**
+
 Given a text, find which are the ten most common words.
 
 ### 20 times - median
