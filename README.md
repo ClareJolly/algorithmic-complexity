@@ -53,3 +53,7 @@ In order to smooth this out I was advised to use median instead of average.  So.
 ![duplicates-median](images/find-dupes-median.png)
 
 Still getting an odd spike around 45,000 - but it is much smoother
+
+### 20 times - median - array length from 10,000 to 100,000
+
+![duplicates-median-smaller](images/find-dupes-median-smaller.png)

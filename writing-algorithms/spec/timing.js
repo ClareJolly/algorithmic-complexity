@@ -62,8 +62,8 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n) {
   console.log(callback)
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
-  for (i = 100000; i <= 1000001; i += 50000) {
-  // for (i = 1000; i <= 10001; i += 500) {
+  // for (i = 100000; i <= 1000001; i += 50000) {
+  for (i = 10000; i <= 100001; i += 5000) {
     // for (i = 1; i <= 30; i ++) {
     // array_to_test = this.createArray(i)
     array_to_test = this.createIncrementingArray(i)
