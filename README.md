@@ -62,6 +62,12 @@ Still getting an odd spike around 45,000 - but it is much smoother
 
 ![duplicates-median-smaller](images/find-dupes-median-smaller.png)
 
+#### 20 times - median - after closing down processes
+
+![duplicates-median-smaller-rerun](images/find-dupes-less-processes.png)
+
+
+
 ### Reverse algorithm
 
 #### 20 times - median

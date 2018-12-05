@@ -27,37 +27,12 @@ Timing.prototype.createIncrementingArray = function(n) {
   arr = []
   var i;
   var a;
-  // arr.push(1)
   for (i = 0; i < n-1; i++) {
     arr.push(i)
   }
   arr.push(0)
   return arr
 };
-
-
-// Timing.prototype.getShuffle = function(arr) {
-//   var j, x, i;
-//   for (i = arr.length - 1; i > 0; i--) {
-//     j = Math.floor(Math.random() * (i + 1));
-//     x = arr[i];
-//     arr[i] = arr[j];
-//     arr[j] = x;
-//   }
-//   return arr;
-// }
-//
-// Timing.prototype.getLast = function(arr) {
-//   return arr.slice(-1)[0]
-// }
-//
-// Timing.prototype.getReverse = function(arr) {
-//   return arr.reverse()
-// }
-//
-// Timing.prototype.getSort = function(arr) {
-//   return arr.sort()
-// }
 
 Timing.prototype.findMedian = function(arr) {
 
@@ -70,26 +45,25 @@ return median
 
 Timing.prototype.performanceTimer = function(callback, cb_name, n,arraytype) {
   test = []
-  // console.log(callback)
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
   // for (i = 100000; i <= 1000001; i += 50000) {
   for (i = 10000; i <= 100001; i += 5000) {
   // for (i = 200; i <= 800; i += 100) {
     // for (i = 1; i <= 30; i ++) {
-    // array_to_test = this.createArray(i)
     array_to_test = arraytype(i)
 
     // document.getElementById('main').insertAdjacentHTML('beforeend', array_to_test);
+
     //Run Performance steps
     var a = window.performance.now()
     callback(array_to_test)
     var b = window.performance.now();
     //end performance steps
 
-    test.push({
-      [i]: (b - a)
-    })
+    // test.push({
+    //   [i]: (b - a)
+    // })
 
     if (this.forAveraging[i] === undefined) {
       this.forAveraging[i] = (b - a)
@@ -144,8 +118,6 @@ Timing.prototype.runTimer = function(toTest, loop, functionname,arraytype) {
     document.getElementById('main').insertAdjacentHTML('beforeend', a + ',' + b + '<br>');
     // document.write(a + ',' + b + '<br>')
   }
-
-
 
   this.createCSV(entries, functionname)
 }
