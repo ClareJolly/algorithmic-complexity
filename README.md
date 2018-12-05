@@ -97,3 +97,5 @@ Given a text, find which are the ten most common words.
 
 ### 20 times - median - using reduce
 ![frequency-reduce](images/freq-reduce.png)
+
+Slower but a smoother line
