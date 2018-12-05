@@ -40,6 +40,11 @@ function sort2 (arr) {
   return arr
 }
 
+function sort3(arr) {
+    return arr.filter((zero) => (zero === 0)).concat(arr.filter((one) => (one === 1)));
+}
 
 
-// console.log(sort2([0,1,0,1]))
+
+
+console.log(sort3([0,1,0,1]))

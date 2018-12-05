@@ -15,4 +15,8 @@ describe('Sorting 1s and 0s', function() {
     expect(sort2([0,1,0,1])).toEqual([0,0,1,1]);
   });
 
+  it('trying to make it linear - expect [0,1,0,1] to return [0,0,1,0]', function() {
+    expect(sort3([0,1,0,1])).toEqual([0,0,1,1]);
+  });
+
 });
