@@ -85,7 +85,7 @@ This one is creating new array and putting the number at the start or end.  Tryi
 
 same curve but **MUCH** slower
 
-## Timing graphs for my return to 10 frequency algorithm
+## Timing graphs for my return top 10 frequency algorithm
 
 **Most frequent words**
 
