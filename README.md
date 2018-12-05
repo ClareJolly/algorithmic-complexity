@@ -91,6 +91,9 @@ same curve but **MUCH** slower
 
 Given a text, find which are the ten most common words.
 
-### 20 times - median
+### 20 times - median - using a for loop
 
 ![frequency](images/frequency-top10.png)
+
+### 20 times - median - using reduce
+![frequency-reduce](images/freq-reduce.png)

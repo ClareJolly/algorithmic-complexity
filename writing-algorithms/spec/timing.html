@@ -29,6 +29,9 @@ body {
 <button name="sort" id="sort">sort - 1s & 0s - new array</button>
 <button name="sort2" id="sort2">sort - 1s & 0s - existing array</button>
 <button name="freq" id="freq">frequency - top 10</button>
+<button name="freqreduce" id="freqreduce">frequency - top 10 - with reduce</button>
+<button name="subseq" id="subseq">subSequenceSum</button>
+
 <!-- <button name="reverse2" id="reverse2">reverse - SLOW</button> -->
 
 <div id="main">
@@ -38,6 +41,7 @@ body {
 <script src="../reverse.js"></script>
 <script src="../sort.js"></script>
 <script src="../frequency.js"></script>
+<script src="../subsequencesum.js"></script>
 <script src="timing.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() {
     timer = new Timing
@@ -74,6 +78,12 @@ document.getElementById("sort2").addEventListener("click", function() {
 })
 document.getElementById("freq").addEventListener("click", function() {
   timer.runTimer(frequency, 20,'frequency',timer.createArray);
+})
+document.getElementById("freqreduce").addEventListener("click", function() {
+  timer.runTimer(frequency2, 20,'frequency2',timer.createArray);
+})
+document.getElementById("subseq").addEventListener("click", function() {
+  timer.runTimer(subSequenceSum, 20,'subSequenceSum',timer.createArray);
 })
 // document.getElementById("reverse2").addEventListener("click", function() {
 //   timer.runTimer(reverse2, 20,'reverse2');
