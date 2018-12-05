@@ -17,6 +17,16 @@ body {
     font-family: 'Bungee', cursive;
       }
     </style>
+    <script src="../finding_duplicates.js"></script>
+    <script src="../reverse.js"></script>
+    <script src="../sort.js"></script>
+    <script src="../frequency.js"></script>
+    <script src="../subsequencesum.js"></script>
+    <script src="timing.js"></script>
+    <!-- <script>import {entries} from 'timing.js' -->
+<!-- console.log(entries) -->
+    <!-- </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
   </head>
   <body>
 <h1>Timing functions in JavaScript</h1>
@@ -26,6 +36,7 @@ body {
 <button name="sort" id="sort">sort</button> -->
 <button name="dupes" id="dupes">find duplicates</button>
 <button name="reverse" id="reverse">reverse</button>
+<button name="reverse_new" id="reverse_new">reverse - REFACTORED</button>
 <button name="sort" id="sort">sort - 1s & 0s - new array</button>
 <button name="sort2" id="sort2">sort - 1s & 0s - existing array</button>
 <button name="freq" id="freq">frequency - top 10</button>
@@ -37,12 +48,49 @@ body {
 <div id="main">
 
 </div>
-<script src="../finding_duplicates.js"></script>
-<script src="../reverse.js"></script>
-<script src="../sort.js"></script>
-<script src="../frequency.js"></script>
-<script src="../subsequencesum.js"></script>
-<script src="timing.js"></script>
+<!-- <canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            // data: [12, 19, 3, 5, 2, 3],
+            data: entries
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script> -->
+
+
 <script>document.addEventListener('DOMContentLoaded', function() {
     timer = new Timing
     // console.log(timer.create1and0Array(10))
@@ -69,10 +117,12 @@ document.getElementById("dupes").addEventListener("click", function() {
 document.getElementById("reverse").addEventListener("click", function() {
   timer.runTimer(reverse, 20,'reverse',timer.createArray);
 })
+document.getElementById("reverse_new").addEventListener("click", function() {
+  timer.runTimer(reverse3, 20,'reverse3',timer.createArray);
+})
 document.getElementById("sort").addEventListener("click", function() {
   timer.runTimer(sort, 20,'sort',timer.create1and0Array);
 })
-
 document.getElementById("sort2").addEventListener("click", function() {
   timer.runTimer(sort2, 20,'sort2',timer.create1and0Array);
 })

@@ -146,6 +146,7 @@ Timing.prototype.runTimer = function(toTest, loop, functionname,arraytype) {
   }
 
 
+
   this.createCSV(entries, functionname)
 }
 
@@ -172,3 +173,5 @@ Timing.prototype.createCSV = function(arr, name) {
 
   link.click();
 }
+
+// export const entries

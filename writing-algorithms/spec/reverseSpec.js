@@ -15,12 +15,12 @@ describe('Reverse', function() {
     expect(reverse(['a','b','c'])).toEqual(['c','b','a']);
   });
 
-  it('reverse with slice - expect [a,b] to return [b,a]', function() {
-    expect(reverse2(['a','b'])).toEqual(['b','a']);
+  it('reverse refactored - expect [a,b] to return [b,a]', function() {
+    expect(reverse3(['a','b'])).toEqual(['b','a']);
   });
 
-  it('reverse with slice - expect [a,b,c] to return [c,b,a]', function() {
-    expect(reverse2(['a','b','c'])).toEqual(['c','b','a']);
+  it('reverse refactored - expect [a,b,c] to return [c,b,a]', function() {
+    expect(reverse3(['a','b','c'])).toEqual(['c','b','a']);
   });
 
 });

@@ -50,6 +50,7 @@ function subSequenceSum (arr,num) {
   if (arr[i]+arr[i+1] === num){
     return true
   }
+  // if (arr[i]+arr[i+1])
   }
   // arr.forEach(checkNumbers)
 }

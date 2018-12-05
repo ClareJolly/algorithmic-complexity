@@ -28,7 +28,6 @@ function sort (arr) {
 }
 
 function sort2 (arr) {
-  newArr = []
   for (var i = 0; i < arr.length; ++i){
     temp = arr[i]
     arr.splice(i, 1);

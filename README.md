@@ -69,6 +69,11 @@ Still getting an odd spike around 45,000 - but it is much smoother
 
 using a reverse iterating through the array - so i=final index down to i=0
 
+#### 20 times - median - using map
+
+![reverse-map](images/reverse-map.png)
+
+
 ### Sorting 1s and 0s algorithm
 
 **Sorting 0s and 1s**

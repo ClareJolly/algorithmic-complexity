@@ -33,4 +33,10 @@ function reverse2 (arr) {
   return newArr
 }
 
+function reverse3 (arr) {
+
+return arr.map((item,index) => arr[arr.length-1-index])
+
+}
+
 // reverse2(['a','b'])
