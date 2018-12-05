@@ -73,6 +73,10 @@ using a reverse iterating through the array - so i=final index down to i=0
 
 ![reverse-map](images/reverse-map.png)
 
+#### 20 times - median - using push and pop
+
+![reverse-pushpop](images/rev-push-pop.png)
+
 
 ### Sorting 1s and 0s algorithm
 

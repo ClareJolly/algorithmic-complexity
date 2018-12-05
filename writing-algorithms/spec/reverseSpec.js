@@ -23,4 +23,12 @@ describe('Reverse', function() {
     expect(reverse3(['a','b','c'])).toEqual(['c','b','a']);
   });
 
+  it('reverse refactored new- expect [a,b] to return [b,a]', function() {
+    expect(reverse4(['a','b'])).toEqual(['b','a']);
+  });
+
+  it('reverse refactored new- expect [a,b,c] to return [c,b,a]', function() {
+    expect(reverse4(['a','b','c'])).toEqual(['c','b','a']);
+  });
+
 });

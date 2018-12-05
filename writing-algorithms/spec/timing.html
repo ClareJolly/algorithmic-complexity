@@ -37,6 +37,7 @@ body {
 <button name="dupes" id="dupes">find duplicates</button>
 <button name="reverse" id="reverse">reverse</button>
 <button name="reverse_new" id="reverse_new">reverse - REFACTORED</button>
+<button name="reverse_new" id="reverse_pushpop">reverse - pushing and popping</button>
 <button name="sort" id="sort">sort - 1s & 0s - new array</button>
 <button name="sort2" id="sort2">sort - 1s & 0s - existing array</button>
 <button name="freq" id="freq">frequency - top 10</button>
@@ -119,6 +120,9 @@ document.getElementById("reverse").addEventListener("click", function() {
 })
 document.getElementById("reverse_new").addEventListener("click", function() {
   timer.runTimer(reverse3, 20,'reverse3',timer.createArray);
+})
+document.getElementById("reverse_pushpop").addEventListener("click", function() {
+  timer.runTimer(reverse4, 20,'reverse4',timer.createArray);
 })
 document.getElementById("sort").addEventListener("click", function() {
   timer.runTimer(sort, 20,'sort',timer.create1and0Array);

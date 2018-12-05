@@ -39,4 +39,13 @@ return arr.map((item,index) => arr[arr.length-1-index])
 
 }
 
+function reverse4 (arr) {
+  var newArr = [];
+  while (arr.length) {
+    newArr.push(arr.pop());
+  }
+
+  return newArr
+}
+
 // reverse2(['a','b'])
