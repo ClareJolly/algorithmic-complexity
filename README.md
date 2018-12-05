@@ -102,6 +102,12 @@ This one is creating new array and putting the number at the start or end.  Tryi
 
 same curve but **MUCH** slower
 
+### 20 times - median - using filters
+
+![sort10linear](images/sort-1_0_linear.png)
+
+LINEAR!!!
+
 ### Return top 10 frequency algorithm
 
 **Most frequent words**
