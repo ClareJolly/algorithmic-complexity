@@ -42,60 +42,62 @@ opposite of efficiency - want to try to decrease complexity
 ### sort
 ![sort](images/sort-data.png)
 
-## Timing graphs for my finding duplicates algorithm
+## My own algorithms
+
+### Finding duplicates algorithm
 
 Given a list of words, find all words that appear more than once.
 
-### 20 times - average
+#### 20 times - average
 ![duplicates](images/find-dupes.png)
 
 In order to smooth this out I was advised to use median instead of average.  So.....
 
-### 20 times - median
+#### 20 times - median
 ![duplicates-median](images/find-dupes-median.png)
 
 Still getting an odd spike around 45,000 - but it is much smoother
 
-### 20 times - median - array length from 10,000 to 100,000
+#### 20 times - median - array length from 10,000 to 100,000
 
 ![duplicates-median-smaller](images/find-dupes-median-smaller.png)
 
-## Timing graphs for my reverse algorithm
+### Reverse algorithm
 
-### 20 times - median
+#### 20 times - median
 ![reverse](images/reverse.png)
 
 using a reverse iterating through the array - so i=final index down to i=0
 
-## Timing graphs for my sorting 1s and 0s algorithm
+### Sorting 1s and 0s algorithm
 
 **Sorting 0s and 1s**
 
 Given an array containing only 0s and 1s, sort it.
 
-### 20 times - median - new array
+#### 20 times - median - new array
 
 ![sort10](images/sort-1_0.png)
 
 This one is creating new array and putting the number at the start or end.  Trying with a slightly different method of updating the existing array
 
-### 20 times - median - same array
+#### 20 times - median - same array
 
 ![sort10same](images/sort-1_0_same.png)
 
 same curve but **MUCH** slower
 
-## Timing graphs for my return top 10 frequency algorithm
+### Return top 10 frequency algorithm
 
 **Most frequent words**
 
 Given a text, find which are the ten most common words.
 
-### 20 times - median - using a for loop
+#### 20 times - median - using a for loop
 
 ![frequency](images/frequency-top10.png)
 
-### 20 times - median - using reduce
+#### 20 times - median - using reduce
 ![frequency-reduce](images/freq-reduce.png)
 
 Slower but a smoother line
