@@ -79,6 +79,8 @@ using a reverse iterating through the array - so i=final index down to i=0
 
 ![reverse-map](images/reverse-map.png)
 
+This is the best one - kind of linear - the jump around 65k array items may be due to the way JavaScript is handled in Chrome.  I tried running in Firefox but it rounds up performance.now() to the nearest millisecond so couldn't get decent results in order to graph it.  I wasn't seeing an obvious jump though which leads me to think it's a Chromium thing (also does it in Opera which is based on Chromium)
+
 #### 20 times - median - using push and pop
 
 ![reverse-pushpop](images/rev-push-pop.png)
