@@ -96,61 +96,67 @@ function quickSort(arr) {
 		var newArr = [];
 		var pivot = arr.pop();
 
-		for (var i = 0; i < arr.length; i++) {
-			if (arr[i] <= pivot) {
-				l1.push(arr[i]);
-			} else {
-				l2.push(arr[i]);
-			}
-		}
+    l1l2 = partition(arr,pivot)
+    l1 = l1l2[0]
+    l2 = l1l2[1]
 
 		return newArr.concat(quickSort(l1), pivot, quickSort(l2));
 	}
 }
 
-// function quickSort_rec(arr) {
-//
-//   if (arr.length <= 1) {
-//     return arr
-//   } else {
-//     pivot = arr[0]
-//     // origpivot = arr[0]
-//     console.log("pivot:",pivot)
-//     l1l2 = partition(arr.slice(1), pivot)
-//     l1 = l1l2[0]
-//     // console.log("l1",l1)
-//     l2 = l1l2[1]
-//     // console.log("l2",l2)
-//     // arr = sorted_l1 + [pivot] + sorted_l2
-//     // console.log("arr",arr)
-//     sorted_l1 = quickSort(l1)
-//     sorted_l2 = quickSort(l2)
-//     console.log(sorted_l1)
-//     console.log("piv",pivot)
-//     console.log(sorted_l2)
-//     return sorted_l1 + [origpivot] + sorted_l2 // merging l1 and l2
-// }
-// }
-//
-// function partition(arr,pivot) {
-// var l1 = []
-// var l2 = []
-// console.log(pivot)
-//   for (var b=0; b < arr.length; b++){ //exclude the first element in array onwards - slice (removed pivot)
-//
-//     console.log(arr[b])
-//       if (arr[b] < pivot) {
-//       l1.push(arr[b])
-//     }
-//     else {
-//       l2.push(arr[b])
-//     }
-//
-//   }
-// console.log("l1",l1)
-// // l2 = l1l2[1]
-// console.log("l2",l2)
-// return [l1,l2]
-// }
+function partition(arr,pivot){
 
-console.log(quickSort([5,2,1,3]))
+  var l1 = [];
+  var l2 = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] <= pivot) {
+      l1.push(arr[i]);
+    } else {
+      l2.push(arr[i]);
+    }
+  }
+
+  return [l1,l2]
+}
+
+function quickSort_a(list) {
+  l1 = []
+l2 = []
+newArr = []
+  if (list.length <= 1) {
+    return list
+}  else {
+    pivot = list[0]
+    // l1,l2 = partition_a(list[exclude pivot], pivot)
+    l1l2 = partition_a(list.slice(1),pivot)
+    console.log(l1l2)
+    l1 = l1l2[0]
+    l2 = l1l2[1]
+    sorted_l1 = quickSort_a(l1)
+    sorted_l2 = quickSort_a(l2)
+    return newArr.concat(quickSort_a(sorted_l1), pivot, quickSort_a(sorted_l2));
+    // return sorted_l1 + [pivot] + sorted_l2 // merging l1 and l2
+}
+}
+
+function partition_a (list,pivot){
+  l1 = []
+l2 = []
+console.log(list)
+console.log(pivot)
+for (var i = 0; i < list.length; i++) {
+
+    if (list[i] < pivot) {
+      l1.push(list[i])
+    } else{
+      l2.push(list[i])
+    }
+  }
+  console.log("l1:",l1)
+  console.log("l2:",l2)
+  return [l1,l2]
+}
+
+
+
+console.log(quickSort_a([5,2,1,3]))

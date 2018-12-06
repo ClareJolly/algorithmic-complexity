@@ -144,4 +144,4 @@ As expected - a quadratic graph
 
 ![quick-sort](images/quicksort.png)
 
-No recursion at the moment
+<!-- No recursion at the moment -->

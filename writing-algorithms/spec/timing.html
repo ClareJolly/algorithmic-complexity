@@ -47,6 +47,7 @@ body {
 <button name="q_sort" id="q_sort">Quadratic sort - insertion</button>
 <button name="bubble" id="bubble">Quadratic sort - bubble</button>
 <button name="quick" id="quick">Quick sort</button>
+<!-- <button name="quickrec" id="quickrec">Quick sort - recursion</button> -->
 
 <!-- <button name="reverse2" id="reverse2">reverse - SLOW</button> -->
 
@@ -155,6 +156,9 @@ document.getElementById("bubble").addEventListener("click", function() {
 document.getElementById("quick").addEventListener("click", function() {
   timer.runTimer(quickSort, 20,'quickSort',timer.createArray);
 })
+// document.getElementById("quickrec").addEventListener("click", function() {
+//   timer.runTimer(quickSort_rec, 20,'quickSort_rec',timer.createArray);
+// })
 // document.getElementById("reverse2").addEventListener("click", function() {
 //   timer.runTimer(reverse2, 20,'reverse2');
 // })

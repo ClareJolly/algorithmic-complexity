@@ -31,4 +31,10 @@ describe('Sorting 1s and 0s', function() {
     expect(quickSort([5,2,1,3])).toEqual([1,2,3,5]);
   });
 
+  it('quick sort - recursion - expect [5,2,1,3] to return [1,2,3,5]', function() {
+    expect(quickSort_rec([5,2,1,3])).toEqual([1,2,3,5]);
+  });
+
+
+
 });
