@@ -21,7 +21,7 @@
 
 
 function frequency(list) {
-  newList = {}
+  var newList = {}
 
   for (var i = 0; i < list.length; i++) {
 
@@ -42,7 +42,7 @@ function frequency(list) {
 }
 
 function frequency2 (list) {
-  result = list.reduce((tally, num) => {
+  var result = list.reduce((tally, num) => {
     if (!tally[num]) {
       tally[num] = 1;
     } else {
