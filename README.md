@@ -143,5 +143,3 @@ As expected - a quadratic graph
 #### 20 times - median
 
 ![quick-sort](images/quicksort.png)
-
-<!-- No recursion at the moment -->
