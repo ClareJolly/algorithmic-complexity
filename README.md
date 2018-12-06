@@ -131,7 +131,7 @@ Slower but a smoother line
 
 As expected - a quadratic graph
 
-### Quadratic Sort - bubble
+### Quadratic Sort - bubble 
 
 #### 20 times - median
 ![bubble-sort](images/bubble-sort.png)
