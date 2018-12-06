@@ -131,9 +131,17 @@ Slower but a smoother line
 
 As expected - a quadratic graph
 
-### Quadratic Sort - bubble 
+### Quadratic Sort - bubble
 
 #### 20 times - median
 ![bubble-sort](images/bubble-sort.png)
 
 As expected - a quadratic graph
+
+### Quick Sort
+
+#### 20 times - median
+
+![quick-sort](images/quicksort.png)
+
+No recursion at the moment

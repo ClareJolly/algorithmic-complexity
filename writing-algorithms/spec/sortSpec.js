@@ -27,4 +27,8 @@ describe('Sorting 1s and 0s', function() {
     expect(bubbleSort([5,2,1,3])).toEqual([1,2,3,5]);
   });
 
+  it('quick sort - expect [5,2,1,3] to return [1,2,3,5]', function() {
+    expect(quickSort([5,2,1,3])).toEqual([1,2,3,5]);
+  });
+
 });
