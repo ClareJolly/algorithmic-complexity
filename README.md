@@ -138,7 +138,7 @@ As expected - a quadratic graph
 
 As expected - a quadratic graph
 
-### Quick Sort
+### Quick Sort - with recursion
 
 #### 20 times - median
 
