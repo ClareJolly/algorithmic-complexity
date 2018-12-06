@@ -48,12 +48,12 @@ opposite of efficiency - want to try to decrease complexity
 
 Given a list of words, find all words that appear more than once.
 
-#### 20 times - average
+#### 20 times - average - using an object to store new list
 ![duplicates](images/find-dupes.png)
 
 In order to smooth this out I was advised to use median instead of average.  So.....
 
-#### 20 times - median
+#### 20 times - median - using an object to store new list
 ![duplicates-median](images/find-dupes-median.png)
 
 Still getting an odd spike around 45,000 - but it is much smoother
@@ -70,7 +70,7 @@ Still getting an odd spike around 45,000 - but it is much smoother
 
 ### Reverse algorithm
 
-#### 20 times - median
+#### 20 times - median - reverse iterating through array
 ![reverse](images/reverse.png)
 
 using a reverse iterating through the array - so i=final index down to i=0
