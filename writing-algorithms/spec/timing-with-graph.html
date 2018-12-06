@@ -31,6 +31,40 @@ body {
       // console.log(timer.create1and0Array(10))
       // console.log(timer.findMedian([2, 56, 3, 41, 0, 4, 100, 23]))
       // timer.runTimer(timer.getShuffle, 2,'getShuffle');
+
+      document.getElementById("dupes").addEventListener("click", function() {
+        timer.runTimer(findDuplicates, 20,'findDuplicates',timer.createIncrementingArray);
+      })
+      document.getElementById("reverse").addEventListener("click", function() {
+        timer.runTimer(reverse, 20,'reverse',timer.createArray);
+      })
+      document.getElementById("reverse_new").addEventListener("click", function() {
+        timer.runTimer(reverse3, 20,'reverse3',timer.createArray);
+      })
+      document.getElementById("reverse_pushpop").addEventListener("click", function() {
+        timer.runTimer(reverse4, 20,'reverse4',timer.createArray);
+      })
+      document.getElementById("sort").addEventListener("click", function() {
+        timer.runTimer(sort, 20,'sort',timer.create1and0Array);
+      })
+      document.getElementById("sort2").addEventListener("click", function() {
+        timer.runTimer(sort2, 20,'sort2',timer.create1and0Array);
+      })
+      document.getElementById("sort3").addEventListener("click", function() {
+        timer.runTimer(sort3, 20,'sort3',timer.create1and0Array);
+      })
+      document.getElementById("freq").addEventListener("click", function() {
+        timer.runTimer(frequency, 20,'frequency',timer.createArray);
+      })
+      document.getElementById("freqreduce").addEventListener("click", function() {
+        timer.runTimer(frequency2, 20,'frequency2',timer.createArray);
+      })
+      document.getElementById("subseq").addEventListener("click", function() {
+        timer.runTimer(subSequenceSum, 20,'subSequenceSum',timer.createArray);
+      })
+      // document.getElementById("reverse2").addEventListener("click", function() {
+      //   timer.runTimer(reverse2, 20,'reverse2');
+      // })
   }, false);
 
 
@@ -46,39 +80,7 @@ body {
   // document.getElementById("sort").addEventListener("click", function() {
   //   timer.runTimer(timer.getSort, 10,'getSort');
   // })
-  document.getElementById("dupes").addEventListener("click", function() {
-    timer.runTimer(findDuplicates, 20,'findDuplicates',timer.createIncrementingArray);
-  })
-  document.getElementById("reverse").addEventListener("click", function() {
-    timer.runTimer(reverse, 20,'reverse',timer.createArray);
-  })
-  document.getElementById("reverse_new").addEventListener("click", function() {
-    timer.runTimer(reverse3, 20,'reverse3',timer.createArray);
-  })
-  document.getElementById("reverse_pushpop").addEventListener("click", function() {
-    timer.runTimer(reverse4, 20,'reverse4',timer.createArray);
-  })
-  document.getElementById("sort").addEventListener("click", function() {
-    timer.runTimer(sort, 20,'sort',timer.create1and0Array);
-  })
-  document.getElementById("sort2").addEventListener("click", function() {
-    timer.runTimer(sort2, 20,'sort2',timer.create1and0Array);
-  })
-  document.getElementById("sort3").addEventListener("click", function() {
-    timer.runTimer(sort3, 20,'sort3',timer.create1and0Array);
-  })
-  document.getElementById("freq").addEventListener("click", function() {
-    timer.runTimer(frequency, 20,'frequency',timer.createArray);
-  })
-  document.getElementById("freqreduce").addEventListener("click", function() {
-    timer.runTimer(frequency2, 20,'frequency2',timer.createArray);
-  })
-  document.getElementById("subseq").addEventListener("click", function() {
-    timer.runTimer(subSequenceSum, 20,'subSequenceSum',timer.createArray);
-  })
-  // document.getElementById("reverse2").addEventListener("click", function() {
-  //   timer.runTimer(reverse2, 20,'reverse2');
-  // })
+
   </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
   </head>
