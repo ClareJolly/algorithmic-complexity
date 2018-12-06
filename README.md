@@ -67,7 +67,6 @@ Still getting an odd spike around 45,000 - but it is much smoother
 ![duplicates-median-smaller-rerun](images/find-dupes-less-processes.png)
 
 
-
 ### Reverse algorithm
 
 #### 20 times - median - reverse iterating through array
@@ -124,3 +123,17 @@ Given a text, find which are the ten most common words.
 ![frequency-reduce](images/freq-reduce.png)
 
 Slower but a smoother line
+
+### Quadratic Sort - insertion
+
+#### 20 times - median
+![insertion-sort](images/insertion-sort.png)
+
+As expected - a quadratic graph
+
+### Quadratic Sort - bubble
+
+#### 20 times - median
+![bubble-sort](images/bubble-sort.png)
+
+As expected - a quadratic graph
