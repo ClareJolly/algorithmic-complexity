@@ -146,6 +146,7 @@ Timing.prototype.createCSV = function(arr, name) {
   link.click();
 }
 
+
 const entries = entries
 export const entries
 export Timing
