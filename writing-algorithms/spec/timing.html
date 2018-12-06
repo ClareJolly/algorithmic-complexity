@@ -43,7 +43,8 @@ body {
 <button name="sort3" id="sort3">sort - 1s & 0s - trying to make linear</button>
 <button name="freq" id="freq">frequency - top 10</button>
 <button name="freqreduce" id="freqreduce">frequency - top 10 - with reduce</button>
-<button name="subseq" id="subseq">subSequenceSum</button>
+<!-- <button name="subseq" id="subseq">subSequenceSum</button> -->
+<button name="q_sort" id="q_sort">Quadratic sort</button>
 
 <!-- <button name="reverse2" id="reverse2">reverse - SLOW</button> -->
 
@@ -140,8 +141,11 @@ document.getElementById("freq").addEventListener("click", function() {
 document.getElementById("freqreduce").addEventListener("click", function() {
   timer.runTimer(frequency2, 20,'frequency2',timer.createArray);
 })
-document.getElementById("subseq").addEventListener("click", function() {
-  timer.runTimer(subSequenceSum, 20,'subSequenceSum',timer.createArray);
+// document.getElementById("subseq").addEventListener("click", function() {
+//   timer.runTimer(subSequenceSum, 20,'subSequenceSum',timer.createArray);
+// })
+document.getElementById("q_sort").addEventListener("click", function() {
+  timer.runTimer(quadraticSort, 20,'quadraticSort',timer.createArray);
 })
 // document.getElementById("reverse2").addEventListener("click", function() {
 //   timer.runTimer(reverse2, 20,'reverse2');

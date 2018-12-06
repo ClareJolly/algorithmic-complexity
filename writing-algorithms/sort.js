@@ -44,6 +44,9 @@ function sort3(arr) {
     return arr.filter((zero) => (zero === 0)).concat(arr.filter((one) => (one === 1)));
 }
 
+function quadraticSort(arr) {
+  
+}
 
 
 
