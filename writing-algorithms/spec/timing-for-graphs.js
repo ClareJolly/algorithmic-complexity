@@ -1,7 +1,7 @@
 function Timing() {
   this.forAveraging = {}
   this.forMedian = {}
-  const entries
+  // const entries
 };
 
 Timing.prototype.createArray = function(n) {
