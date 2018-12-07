@@ -123,4 +123,4 @@ function partition(arr,pivot){
 
 
 
-console.log(quickSort_a([5,2,1,3]))
+console.log(quickSort([5,2,1,3]))
