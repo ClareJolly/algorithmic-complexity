@@ -49,7 +49,7 @@ Timing.prototype.performanceTimer = function(callback, cb_name, n,arraytype) {
   var test = []
   document.getElementById('main').insertAdjacentHTML('beforeend', "<br><br>" + cb_name + '- run ' + n + '<br>');
   // document.write("<br><br>" + cb_name + '- run ' + n + '<br>')
-  // for (i = 100000; i <= 1000001; i += 50000) {
+  // for (var i = 100000; i <= 1000001; i += 50000) {
   for (var i = 1000; i <= 10001; i += 500) {
   // for (var i = 200; i <= 800; i += 100) {
     // for (i = 1; i <= 30; i ++) {
