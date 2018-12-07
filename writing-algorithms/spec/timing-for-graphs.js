@@ -148,6 +148,9 @@ Timing.prototype.createCSV = function(arr, name) {
 }
 
 
-const entries = entries
-export const entries
-export Timing
+// const entries = entries
+// export const entries
+// export Timing
+
+module.exports = Timing
+module.exports = entries
